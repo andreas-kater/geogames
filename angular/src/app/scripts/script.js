@@ -1,3 +1,4 @@
+console.log('yoyo');
 var map = L.map('mapid').setView([38.4772832,-100.5684629], 4);
 L.tileLayer.provider('CartoDB.PositronNoLabels').addTo(map);
 

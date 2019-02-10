@@ -30,22 +30,22 @@
               { 
                 "input": "src/app/scripts/leaflet.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet.bundle"
               },
               { 
                 "input": "src/app/scripts/leaflet-providers.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet-providers.bundle"
               },
               { 
                 "input": "src/app/scripts/leaflet.ajax.min.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet.ajax.min.bundle"
               },
               { 
                 "input": "src/app/scripts/script.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "script.bundle"
               }
             ]
           },
@@ -108,22 +108,22 @@
               { 
                 "input": "src/app/scripts/leaflet.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet.bundle"
               },
               { 
                 "input": "src/app/scripts/leaflet-providers.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet-providers.bundle"
               },
               { 
                 "input": "src/app/scripts/leaflet.ajax.min.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "leaflet.ajax.min.bundle"
               },
               { 
                 "input": "src/app/scripts/script.js",
                 "lazy": true, 
-                "bundleName": "lazy-loaded-scripts"
+                "bundleName": "script.bundle"
               }
             ],
             "assets": [
