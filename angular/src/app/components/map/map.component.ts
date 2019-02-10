@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { latLng, LatLng, tileLayer, polygon } from 'leaflet';
+import * as data from './world110m.json';
 
 
 @Component({
@@ -9,7 +10,9 @@ import { latLng, LatLng, tileLayer, polygon } from 'leaflet';
 })
 export class MapComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    //    private example = data
+  ) { }
 
   options = {
     zoom: 4,
@@ -28,6 +31,7 @@ export class MapComponent implements OnInit {
   }
   ngOnInit() {
     this.addPolygon();
+    console.log(data);
   }
 
 }
