@@ -1,9 +1,8 @@
-console.log('yoyo');
-var map = L.map('mapid').setView([38.4772832,-100.5684629], 4);
-L.tileLayer.provider('CartoDB.PositronNoLabels').addTo(map);
 
-// var geojsonLayer = new L.GeoJSON.AJAX("assets/world110m.geojson");
-// geojsonLayer.addTo(map);
+const map = L.map('mapid').setView([38.4772832,-100.5684629], 4);
+L.tileLayer.provider('CartoDB.PositronNoLabels').addTo(map);
+const geojsonLayer = new L.GeoJSON.AJAX("assets/world110m.geojson");
+geojsonLayer.addTo(map);
 
 
 var states = [{

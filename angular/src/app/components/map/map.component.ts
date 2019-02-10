@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import '../../scripts/leaflet.js';
+import '../../scripts/script.js';
 
 @Component({
   selector: 'app-map',
@@ -10,13 +12,10 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    one();
-    async function one() {
-      await lazyLoad('leaflet.bundle.js');
-      await lazyLoad('leaflet-providers.bundle.js');
-      await lazyLoad('leaflet.ajax.min.bundle.js');
-      await lazyLoad('script.bundle.js');
-    }
+    //    lazyLoad('leaflet.bundle.js');
+    //    lazyLoad('leaflet-providers.bundle.js');
+    //    lazyLoad('leaflet.ajax.min.bundle.js');
+    //    lazyLoad('script.bundle.js');
 
     function lazyLoad(filename) {
       const script = document.createElement('script');
@@ -24,7 +23,7 @@ export class MapComponent implements OnInit {
       script.type = 'text/javascript';
       script.async = false;
       script.charset = 'utf-8';
-      document.getElementsByTagName('body')[0].appendChild(script);
+      document.getElementsByTagName('head')[0].appendChild(script);
     }
   }
 
