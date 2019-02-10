@@ -24,29 +24,30 @@
             ],
             "styles": [
               "src/app/styles/styles.css",
+              "./node_modules/leaflet/dist/leaflet.css",
               "src/app/styles/leaflet.css"
             ],
             "scripts": [
-              { 
-                "input": "src/app/scripts/leaflet.js",
-                "lazy": true, 
-                "bundleName": "leaflet.bundle"
-              },
-              { 
-                "input": "src/app/scripts/leaflet-providers.js",
-                "lazy": true, 
-                "bundleName": "leaflet-providers.bundle"
-              },
-              { 
-                "input": "src/app/scripts/leaflet.ajax.min.js",
-                "lazy": true, 
-                "bundleName": "leaflet.ajax.min.bundle"
-              },
-              { 
-                "input": "src/app/scripts/script.js",
-                "lazy": true, 
-                "bundleName": "script.bundle"
-              }
+              //              { 
+                //                "input": "src/app/scripts/leaflet.js",
+                //                "lazy": true, 
+                //                "bundleName": "leaflet.bundle"
+                //              },
+                //              { 
+                  //                "input": "src/app/scripts/leaflet-providers.js",
+                  //                "lazy": true, 
+                  //                "bundleName": "leaflet-providers.bundle"
+                  //              },
+                  //              { 
+                    //                "input": "src/app/scripts/leaflet.ajax.min.js",
+                    //                "lazy": true, 
+                    //                "bundleName": "leaflet.ajax.min.bundle"
+                    //              },
+                    //              { 
+                      //                "input": "src/app/scripts/script.js",
+                      //                "lazy": true, 
+                      //                "bundleName": "script.bundle"
+                      //              }
             ]
           },
           "configurations": {
@@ -102,29 +103,30 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/app/styles/styles.css",
+              "./node_modules/leaflet/dist/leaflet.css",
               "src/app/styles/leaflet.css"
             ],
             "scripts": [
-              { 
-                "input": "src/app/scripts/leaflet.js",
-                "lazy": true, 
-                "bundleName": "leaflet.bundle"
-              },
-              { 
-                "input": "src/app/scripts/leaflet-providers.js",
-                "lazy": true, 
-                "bundleName": "leaflet-providers.bundle"
-              },
-              { 
-                "input": "src/app/scripts/leaflet.ajax.min.js",
-                "lazy": true, 
-                "bundleName": "leaflet.ajax.min.bundle"
-              },
-              { 
-                "input": "src/app/scripts/script.js",
-                "lazy": true, 
-                "bundleName": "script.bundle"
-              }
+              //              { 
+                //                "input": "src/app/scripts/leaflet.js",
+                //                "lazy": true, 
+                //                "bundleName": "leaflet.bundle"
+                //              },
+                //              { 
+                  //                "input": "src/app/scripts/leaflet-providers.js",
+                  //                "lazy": true, 
+                  //                "bundleName": "leaflet-providers.bundle"
+                  //              },
+                  //              { 
+                    //                "input": "src/app/scripts/leaflet.ajax.min.js",
+                    //                "lazy": true, 
+                    //                "bundleName": "leaflet.ajax.min.bundle"
+                    //              },
+                    //              { 
+                      //                "input": "src/app/scripts/script.js",
+                      //                "lazy": true, 
+                      //                "bundleName": "script.bundle"
+                      //              }
             ],
             "assets": [
               "src/favicon.ico",

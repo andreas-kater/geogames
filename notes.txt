@@ -1,3 +1,6 @@
 Leaflet map layers:
 http://leaflet-extras.github.io/leaflet-providers/preview/index.html
 
+Leaflet angular wrapper:
+https://github.com/Asymmetrik/ngx-leaflet
+

@@ -1,30 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import '../../scripts/leaflet.js';
-import '../../scripts/script.js';
+import { latLng, LatLng, tileLayer, polygon } from 'leaflet';
+
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  styleUrls: ['./map.component.css'],
 })
 export class MapComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    //    lazyLoad('leaflet.bundle.js');
-    //    lazyLoad('leaflet-providers.bundle.js');
-    //    lazyLoad('leaflet.ajax.min.bundle.js');
-    //    lazyLoad('script.bundle.js');
+  options = {
+    zoom: 4,
+    center: latLng(38.4772832, -100.5684629)
+  };
 
-    function lazyLoad(filename) {
-      const script = document.createElement('script');
-      script.src = filename;
-      script.type = 'text/javascript';
-      script.async = false;
-      script.charset = 'utf-8';
-      document.getElementsByTagName('head')[0].appendChild(script);
-    }
+  layers: any = [
+      tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+        { maxZoom: 18, attribution: '...' })
+  ];
+
+  addPolygon() {
+    this.layers.push(
+      polygon([[ 46.8, -121.85 ], [ 46.92, -121.92 ], [ 46.87, -121.8 ]])
+    );
+  }
+  ngOnInit() {
+    this.addPolygon();
   }
 
 }
