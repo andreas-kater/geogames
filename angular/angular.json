@@ -27,7 +27,26 @@
               "src/app/styles/leaflet.css"
             ],
             "scripts": [
-              "src/app/scrips/*"
+              { 
+                "input": "src/app/scripts/leaflet.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/leaflet-providers.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/leaflet.ajax.min.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/script.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              }
             ]
           },
           "configurations": {
@@ -86,7 +105,26 @@
               "src/app/styles/leaflet.css"
             ],
             "scripts": [
-              "src/app/scrips/*"
+              { 
+                "input": "src/app/scripts/leaflet.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/leaflet-providers.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/leaflet.ajax.min.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              },
+              { 
+                "input": "src/app/scripts/script.js",
+                "lazy": true, 
+                "bundleName": "lazy-loaded-scripts"
+              }
             ],
             "assets": [
               "src/favicon.ico",
